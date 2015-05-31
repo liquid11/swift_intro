@@ -149,9 +149,28 @@ default:
     
 }
 
+//classes
 
+class player{
+// initial values must be set to properties
+    var name: String = "john doe"
+    var score:Int = 0
+    //methods
+    func description() -> String {
+    return ("Player \(name) has a score of \(score)")
+    }
+    
+}
 
+//assigning a new class
+var jake = player();
 
+//assigning new values to the properties
+
+jake.name = "jake"
+jake.score = 200
+
+println(jake.description())
 
 
 
